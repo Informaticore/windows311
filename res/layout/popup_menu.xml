@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:background="#c0c0c0">
+    <LinearLayout android:id="@+id/left_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:background="#040284">
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start_left"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/left_thing">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/settings"
+            android:text="Settings"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/icon_calculator"
+            android:text="Calculator"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/icon_file"
+            android:text="File Manager"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/icon_paint"
+            android:text="Paint"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/icon_printer"
+            android:text="Printer Manager"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:clickable="true"
+            android:onClick="onClickMinesweeper"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/icon_minesweeper"
+            android:text="Minesweeper"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/icon_msdos"
+            android:onClick="onClickMsDos"
+            android:text="MS-DOS"/>
+    </LinearLayout>
+
+</RelativeLayout>

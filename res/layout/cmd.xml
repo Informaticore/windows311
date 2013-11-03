@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#000000">
+
+    <include layout="@layout/header"/>
+
+
+    <EditText android:id="@+id/cmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_alignParentBottom="true"
+        android:typeface="monospace"
+        android:background="#000000"
+        android:textColor="#ffffff"/>
+    <View android:layout_width="wrap_content"
+          android:layout_height="1dp"
+          android:layout_above="@id/cmd"
+          android:background="#c0c0c0"/>
+
+    <TextView android:id="@+id/cmd_console"
+        android:textColor="#ffffff"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:textSize="10dp"
+        android:layout_above="@id/cmd"
+        android:typeface="monospace"
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

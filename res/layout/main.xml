@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#008080">
+
+    <RelativeLayout android:id="@+id/tasklist"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c0c0c0">
+        <ImageView android:id="@+id/start"
+           android:contentDescription="@string/app_name"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/start_button"
+           android:onClick="openStartMenu"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"/>
+
+        <TextView android:id="@+id/open_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/start"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@drawable/empty_window"/>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Editor"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:onClick="onClickEditor"
+        android:clickable="true"
+        android:drawableTop="@drawable/icon_textedit"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Internet\nExplorer"
+        android:layout_below="@id/editor"
+        android:textColor="#000000"
+        android:onClick="onClickIExplorer"
+        android:clickable="true"
+        android:drawableTop="@drawable/icon_ie"/>
+
+    <ImageView android:id="@+id/startscreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/startscreen"/>
+
+
+</RelativeLayout>
+
